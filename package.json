@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "t-watch": "npx tailwindcss -i ./tailwind.css -o ./assets/css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}

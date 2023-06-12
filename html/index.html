@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfShoppy</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="w-full ">
+        <div class="flex flex-row justify-between items-center max-w-[1154px] mx-auto py-5 px-5 xl:px-0 gap-5">
+            <a href=""><img src="../assets/images/img/logo.png" alt=""></a>
+            <div class=" items-center gap-4 max-w-[468px] w-full hidden lg:flex">
+                <div class="relative w-full h-10 ">
+                    <input type="text"
+                        class="text-sm outline-none w-full h-10 rounded-lg bg-[#F7F7FD] border border-[#8BCED0] text- [#000929] font-medium pl-12 pr-[80px]">
+                    <a href="#" class="absolute left-[11px] top-1/2 transform -translate-y-1/2">
+                        <div class="flex">
+                            <img src="../assets/images/svg/Frame.svg" alt="">
+                        </div>
+                    </a>
+                    <button
+                        class="min-w-[75px] h-10 bg-[#2CC5EC] hover:bg-[#2495CB] absolute right-0 top-0 text-white text-base font-semibold rounded-r-md ">ARA</button>
+
+                </div>
+            </div>
+            <div class="flex items-center gap-6 personal">
+                <div class="relative ">
+                    <a class="flex items-center gap-[2px] group" href="">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.068" height="19.8"
+                                viewBox="0 0 22.068 19.8">
+                                <g id="shapcar_1" data-name="shapcar 1" transform="translate(-2.739 -2.229)">
+                                    <path class="group-hover:fill-primary-blue" id="Path_9" data-name="Path 9"
+                                        d="M3.4,2.424a3.415,3.415,0,0,1,1.124-.088c.209.007.418.013.624,0A2.246,2.246,0,0,1,7.37,3.554c3.135.022,6.27.019,9.406.015q3.162,0,6.324,0a1.581,1.581,0,0,1,1.54,1.135,1.366,1.366,0,0,1,0,.83q-.556,2.106-1.123,4.207L23.1,11.3a2.8,2.8,0,0,1-2.2,2.062,4.824,4.824,0,0,1-.941.052c-.1,0-.2,0-.3,0H9.352c.053.379.113.757.193,1.132a.894.894,0,0,0,.877.71q2.485.009,4.969,0c2.043,0,4.086,0,6.128.009a.919.919,0,0,1,.889,1.1.965.965,0,0,1-1.037.74H17.461q-3.52,0-7.039,0a2.718,2.718,0,0,1-2.273-1.291,3.32,3.32,0,0,1-.434-1.271q-.389-2.023-.774-4.047Q6.405,7.683,5.864,4.872a3.169,3.169,0,0,0-.179-.682c-.312-.008-.624-.007-.935-.005s-.644,0-.966-.006a.971.971,0,0,1-.8-.41A.919.919,0,0,1,3.4,2.424Zm4.4,3c.222,1.06.425,2.125.628,3.189.189.988.377,1.976.581,2.961q3.48-.007,6.961,0H20.4a.9.9,0,0,0,.946-.747q.276-1.011.555-2.022c.31-1.127.62-2.253.922-3.381l-3.339,0Q13.638,5.412,7.8,5.423Z"
+                                        fill="#3d6565" />
+                                    <path class="group-hover:fill-primary-blue" id="Path_10" data-name="Path 10"
+                                        d="M3.4,2.424a3.415,3.415,0,0,1,1.124-.088c.209.007.418.013.624,0A2.246,2.246,0,0,1,7.37,3.554c3.135.022,6.27.019,9.406.015q3.162,0,6.324,0a1.581,1.581,0,0,1,1.54,1.135,1.366,1.366,0,0,1,0,.83q-.556,2.106-1.123,4.207L23.1,11.3a2.8,2.8,0,0,1-2.2,2.062,4.824,4.824,0,0,1-.941.052c-.1,0-.2,0-.3,0H9.352c.053.379.113.757.193,1.132a.894.894,0,0,0,.877.71q2.485.009,4.969,0c2.043,0,4.086,0,6.128.009a.919.919,0,0,1,.889,1.1.965.965,0,0,1-1.037.74H17.461q-3.52,0-7.039,0a2.718,2.718,0,0,1-2.273-1.291,3.32,3.32,0,0,1-.434-1.271q-.389-2.023-.774-4.047Q6.405,7.683,5.864,4.872a3.169,3.169,0,0,0-.179-.682c-.312-.008-.624-.007-.935-.005s-.644,0-.966-.006a.971.971,0,0,1-.8-.41A.919.919,0,0,1,3.4,2.424Zm4.4,3c.222,1.06.425,2.125.628,3.189.189.988.377,1.976.581,2.961q3.48-.007,6.961,0H20.4a.9.9,0,0,0,.946-.747q.276-1.011.555-2.022c.31-1.127.62-2.253.922-3.381l-3.339,0Q13.638,5.412,7.8,5.423Z"
+                                        fill="none" stroke="#3071b9" stroke-width="0.2" />
+                                    <path class="group-hover:fill-primary-blue" id="Path_11" data-name="Path 11"
+                                        d="M9.139,18.41a1.822,1.822,0,1,1-.264,3.466,1.862,1.862,0,0,1-.917-2.59A1.888,1.888,0,0,1,9.139,18.41Z"
+                                        fill="#3d6565" />
+                                    <path class="group-hover:fill-primary-blue" id="Path_12" data-name="Path 12"
+                                        d="M20.192,18.4a1.827,1.827,0,1,1-.087,3.541,1.846,1.846,0,0,1-1.166-2.464A1.776,1.776,0,0,1,20.192,18.4Z"
+                                        fill="#3d6565" />
+                                </g>
+                            </svg>
+                        </span>
+                        <span
+                            class=" font-semibold text-[#513232] hidden md:block group-hover:text-primary-blue">Basket</span>
+                    </a>
+                    <div
+                        class="absolute left-0 top-0 -translate-x-[18px] -translate-y-[16px] bg-[#19DFF5] rounded-full w-5 h-5 text-[#513232] flex items-center justify-center">
+                        <span class="">4</span>
+                    </div>
+                </div>
+
+
+
+
+
+                <a class="flex items-center gap-[2px] group" href="">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="17.223" height="19.722" viewBox="0 0 17.223 19.722">
+                        <path class="group-hover:stroke-primary-blue" id="user" d="M17.922,19.3c0-3.429-3.411-6.2-7.611-6.2S2.7,15.876,2.7,19.3m7.611-8.861a4.43,4.43,0,1,0-3.133-1.3A4.431,4.431,0,0,0,10.311,10.444Z" transform="translate(-1.7 -0.583)" fill="none" stroke="#3d6565" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                      </svg></span>
+                    <span class="font-semibold text-[#513232] whitespace-nowrap hidden md:block group-hover:text-primary-blue">Log in</span>
+                </a>
+
+                <button
+                    class="w-[98px] h-10 border-[1px] border-[#2CC5EC] rounded-lg p-[10px] flex items-center justify-center font-semibold text-[#3D6565] whitespace-nowrap hover:bg-[#2CC5EC] hover:text-white ">Sign
+                    in</button>
+            </div>
+        </div>
+    </header>
+    <!-- NAVBAR -->
+    <div class="w-full bg-[#3071B9] ">
+        <div class="max-w-[1153px] mx-auto px-5 xl:pl-0 h-full">
+            <div
+                class="w-full flex flex-col lg:flex-row gap-5 items-center justify-between xl:pr-[143px] h-full py-5 lg:py-0">
+                <div tabindex="0"
+                    class="max-w-[175px] w-full  relative  group py-5 bg-gradient-to-b hover:from-[#3071B9] hover:to-[#2495CB] cursor-pointer">
+                    <div
+                        class="absolute left-0 flex flex-col items-center justify-center w-full transition-all opacity-0 pointer-events-none top-full menu-hover group-hover:-translate-y-3 group-hover:opacity-100 group-hover:pointer-events-auto ">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="6" viewBox="0 0 22 6">
+                                <path id="Polygon_1" data-name="Polygon 1" d="M11,0,22,6H0Z" fill="#fff" />
+                            </svg>
+                        </span>
+                        <div class="w-full h-1.5 bg-white"></div>
+                    </div>
+                    <div
+                        class="absolute left-0 z-50 hidden w-[200px] p-4 top-full bg-white group-hover:block shadow-[0px_10px_10px_rgba(48,113,185,.25)]">
+                        <ul>
+                            <li><a href="#" class="flex items-center justify-between text-xs text-[#716D6D] gap-2">
+                                    <span class="flex-1 block hover:bg-[#2CC5EC] p-1">STATIONERY PRODUCTS</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6.113" height="11.461"
+                                            viewBox="0 0 6.113 11.461">
+                                            <path id="Vector"
+                                                d="M.91,10.42,4.755,6.576a1.171,1.171,0,0,0,0-1.651L.91,1.08"
+                                                transform="translate(0.151 -0.019)" fill="none" stroke="#2495cb"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="flex items-center justify-between text-xs text-[#716D6D] gap-2">
+                                    <span class="flex-1 block hover:bg-[#2CC5EC] p-1">OFFICE PRODUCTS</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6.113" height="11.461"
+                                            viewBox="0 0 6.113 11.461">
+                                            <path id="Vector"
+                                                d="M.91,10.42,4.755,6.576a1.171,1.171,0,0,0,0-1.651L.91,1.08"
+                                                transform="translate(0.151 -0.019)" fill="none" stroke="#2495cb"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="flex items-center justify-between text-xs text-[#716D6D] gap-2">
+                                    <span class="flex-1 block hover:bg-[#2CC5EC] p-1">ARTISTIC PRODUCTS</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6.113" height="11.461"
+                                            viewBox="0 0 6.113 11.461">
+                                            <path id="Vector"
+                                                d="M.91,10.42,4.755,6.576a1.171,1.171,0,0,0,0-1.651L.91,1.08"
+                                                transform="translate(0.151 -0.019)" fill="none" stroke="#2495cb"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="flex items-center justify-between text-xs text-[#716D6D] gap-2">
+                                    <span class="flex-1 block hover:bg-[#2CC5EC] p-1">DIGITAL PRINTING</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6.113" height="11.461"
+                                            viewBox="0 0 6.113 11.461">
+                                            <path id="Vector"
+                                                d="M.91,10.42,4.755,6.576a1.171,1.171,0,0,0,0-1.651L.91,1.08"
+                                                transform="translate(0.151 -0.019)" fill="none" stroke="#2495cb"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="flex items-center justify-between text-xs text-[#716D6D] gap-2">
+                                    <span class="flex-1 block hover:bg-[#2CC5EC] p-1">TECHNOLOGICAL</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6.113" height="11.461"
+                                            viewBox="0 0 6.113 11.461">
+                                            <path id="Vector"
+                                                d="M.91,10.42,4.755,6.576a1.171,1.171,0,0,0,0-1.651L.91,1.08"
+                                                transform="translate(0.151 -0.019)" fill="none" stroke="#2495cb"
+                                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                                stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-5 px-6 text-white ">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.835" height="17.004"
+                                viewBox="0 0 22.835 17.004">
+                                <path id="menu_24px"
+                                    d="M3,8.834V6H25.835V8.834Zm0,7.085H25.835V13.085H3ZM3,23H25.835V20.17H3Z"
+                                    transform="translate(-3 -6)" fill="#fff" fill-rule="evenodd" />
+                            </svg>
+                        </span>
+                        <span>MENU</span>
+                    </div>
+                </div>
+                <div id="choose" class="flex flex-col md:flex-row items-center gap-5 max-w-[565px] w-full">
+                    <select id="choose-brand" class="flex-1 w-full custom-select">
+                        <option data-placeholder value="#">SELECT BRAND</option>
+                        <option value="0">FABER CASTELL</option>
+                        <option value="1">ADEL</option>
+                        <option value="2">OKI</option>
+                        <option value="3">CASİO</option>
+                        <option value="4">ROTRİNG</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                    </select>
+                    <select id="choose-model" class="flex-1 w-full custom-select" disabled>
+                        <option value="#">SELECT MODEL</option>
+                        <option value="0">FABER CASTELL</option>
+                        <option value="1">ADEL</option>
+                        <option value="2">OKI</option>
+                        <option value="3">CASİO</option>
+                        <option value="4">ROTRİNG</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                    </select>
+                    <select id="choose-color" class="flex-1 w-full custom-select" disabled>
+                        <option value="#">SELECT COLOR</option>
+                        <option value="0">FABER CASTELL</option>
+                        <option value="1">ADEL</option>
+                        <option value="2">OKI</option>
+                        <option value="3">CASİO</option>
+                        <option value="4">ROTRİNG</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                        <option value="5">EPSON</option>
+                    </select>
+
+                </div>
+                <a href="#"
+                    class="bg-[#2CC5EC] font-semibold rounded-md px-5 py-2 flex items-center justify-center max-w-max text-white hover:bg-[#1BB0D8] border border-transparent hover:border-[#19DFF5]">
+                    SEARCH
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--CAROUSEL-->
+    <div class="owl-carousel owl-theme hero-carousel max-w-[1154px] mx-auto mt-[35px] px-5 xl:px-0">
+        <div class="item">
+            <img src="..//assets/images/img/one-slider.png" alt="">
+        </div>
+        <div class="item">
+            <img src="..//assets/images/img/one-slider.png" alt="">
+        </div>
+        <div class="item">
+            <img src="..//assets/images/img/one-slider.png" alt="">
+        </div>
+        <div class="item">
+            <img src="..//assets/images/img/one-slider.png" alt="">
+        </div>
+        <div class="item">
+            <img src="..//assets/images/img/one-slider.png" alt="">
+        </div>
+    </div>
+    <!--DİSCOVER-->
+    <div class="max-w-[1154px] mx-auto px-5 xl:px-0">
+        <div>
+            <h2 class="text-[25px] font-semibold text-[#5B7D94]">Discover</h2>
+        </div>
+        <div class="flex items-center justify-center flex-wrap gap-[75px] mt-5">
+            <a href="#" class="max-w-[120px] w-full group discover-category ">
+                <div
+                    class=" discover-product max-w-[120px] w-full pt-[100%] bg-[#ECECEC] border border-[#2495CB] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+                        <img src="../assets/images/img/bag.png" class="" alt="">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 items-center justify-center hidden w-full h-full text-5xl font-semibold text-center text-white bg-blue-500/70 group-hover:flex">
+                        70%</div>
+                </div>
+            </a>
+            <a href="#" class="max-w-[120px] w-full group discover-category ">
+                <div
+                    class=" discover-product max-w-[120px] w-full pt-[100%] bg-[#ECECEC] border border-[#2495CB] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+                        <img src="../assets/images/img/bag.png" class="" alt="">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 items-center justify-center hidden w-full h-full text-5xl font-semibold text-center text-white bg-blue-500/70 group-hover:flex">
+                        40%</div>
+                </div>
+            </a>
+            <a href="#" class="max-w-[120px] w-full group discover-category ">
+                <div
+                    class=" discover-product max-w-[120px] w-full pt-[100%] bg-[#ECECEC] border border-[#2495CB] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+                        <img src="../assets/images/img/bag.png" class="" alt="">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 items-center justify-center hidden w-full h-full text-5xl font-semibold text-center text-white bg-blue-500/70 group-hover:flex">
+                        50%</div>
+                </div>
+            </a>
+            <a href="#" class="max-w-[120px] w-full group discover-category ">
+                <div
+                    class=" discover-product max-w-[120px] w-full pt-[100%] bg-[#ECECEC] border border-[#2495CB] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+                        <img src="../assets/images/img/bag.png" class="" alt="">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 items-center justify-center hidden w-full h-full text-5xl font-semibold text-center text-white bg-blue-500/70 group-hover:flex">
+                        70%</div>
+                </div>
+            </a>
+            <a href="#" class="max-w-[120px] w-full group discover-category ">
+                <div
+                    class=" discover-product max-w-[120px] w-full pt-[100%] bg-[#ECECEC] border border-[#2495CB] relative overflow-hidden">
+                    <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full">
+                        <img src="../assets/images/img/bag.png" class="" alt="">
+                    </div>
+                    <div
+                        class="absolute top-0 left-0 items-center justify-center hidden w-full h-full text-5xl font-semibold text-center text-white bg-blue-500/70 group-hover:flex">
+                        30%</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- BAGS -->
+    <div class="max-w-[1154px] mx-auto px-5 xl:px-0 mt-10">
+        <div class="flex items-center justify-between">
+            <h2 class="text-[25px] font-semibold text-[#5B7D94]">BAGS</h2>
+            <a class="text-[22px] font-semibold text-[#5B7D94]" href="#">All</a>
+        </div>
+        <div class="owl-carousel owl-theme bags-carousel mt-[42px]">
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 2.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">15.6 inch Expandable Laptop Backpack (Black)</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ 89,40</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 2.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">15.6 inch Expandable Laptop Backpack (Black)</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ 89,40</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 2.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">15.6 inch Expandable Laptop Backpack (Black)</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ 89,40</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 2.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">15.6 inch Expandable Laptop Backpack (Black)</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ 89,40</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 2.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">15.6 inch Expandable Laptop Backpack (Black)</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ 89,40</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OFIX / X - PLUS -->
+    <div class="max-w-[1154px] mx-auto px-5 xl:px-0 mt-10">
+        <div class="flex items-center justify-between">
+            <h2 class="text-[25px] font-semibold text-[#5B7D94]">OFIX / X - PLUS</h2>
+            <a class="text-[22px] font-semibold text-[#5B7D94]" href="#">All</a>
+        </div>
+        <div class="owl-carousel owl-theme ofix-carousel mt-[42px]">
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 3.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">7 Pocket Accordian File Folders, Organizer-Blue Purple</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ $ 6,99</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 3.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">7 Pocket Accordian File Folders, Organizer-Blue Purple</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ $ 6,99</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 3.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">7 Pocket Accordian File Folders, Organizer-Blue Purple</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ $ 6,99</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 3.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">7 Pocket Accordian File Folders, Organizer-Blue Purple</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ $ 6,99</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item border border-[#3071B9]/50 rounded-md p-4 pt-7 relative overflow-hidden">
+                <div class="absolute left-0 top-0 py-2 px-5 bg-[#52F034]  text-sm font-bold text-[#544C4A] z-50">NEW
+                </div>
+                <div class="relative pt-[90%]">
+                    <img src="../assets/images/img/Image 3.png"
+                        class="absolute top-0 left-0 object-contain w-full h-full" alt="">
+                </div>
+                <div class="flex flex-col mt-2 text-center">
+                    <p class="text-sm">7 Pocket Accordian File Folders, Organizer-Blue Purple</p>
+                    <span class="text-sm mt-[14px]">#195436325336</span>
+                    <span class="text-2xl mt-[14px] text-[#BF9347] font-bold">$ $ 6,99</span>
+                    <span class="text-sm mt-2.5">free shipping</span>
+                    <div class="mt-[14px] grid grid-cols-2 gap-2.5">
+                        <div
+                            class="flex items-center h-[32px] rounded-md border border-[#3071B9] overflow-hidden counter">
+                            <button
+                                class="h-full outline-none flex-1 text-[#3071B9] bg-white counterDecrease">-</button>
+                            <input type="text" value="1"
+                                class="counterValue w-9 h-full text-sm font-semibold text-[#544C4A] text-center outline-none bg-[#EEEEEE]">
+                            <button class="flex-1 h-full outline-none counterIncrease">+</button>
+                        </div>
+                        <a href="#"
+                            class="border border-[#71C9E5] bg-[#BF9347] rounded-md flex justify-center items-center text-white h-[32px]">Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--OPPORTUNITY PRODUCTS-->
+    <div class="max-w-[1154px] mx-auto px-5 xl:px-0 mt-10">
+        <div class="flex items-center justify-between">
+            <h2 class="text-[25px] font-semibold text-[#5B7D94]">OPPORTUNITY PRODUCTS</h2>
+            <a class="text-[22px] font-semibold text-[#5B7D94]" href="#">All</a>
+        </div>
+        <div class="grid grid-cols-1 gap-5 mt-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="relative border border-[#3071B9] rounded-md hover:border-[#BF9347] group">
+                <div
+                    class="absolute left-[-1px] top-[-1px] py-2 px-5 bg-[#BF9347]  text-sm font-bold text-white z-50 border border-[#BF9347] rounded-md">
+                    %60 DISCOUNT
+                </div>
+                <div class="flex items-center justify-center py-2.5 px-7">
+                    <img src="../assets/images/img/Group 137.png" class="w-full" alt="">
+                </div>
+                <div class="bg-[#3071B9] text-white text-sm font-semibold p-2.5 group-hover:bg-[#BF9347]">
+                    <p class="">Don't miss the opportunity products, big discount has started! JOIN NOW</p>
+                </div>
+            </div>
+            <div class="relative border border-[#3071B9] rounded-md hover:border-[#BF9347] group">
+                <div
+                    class="absolute left-[-1px] top-[-1px] py-2 px-5 bg-[#BF9347]  text-sm font-bold text-white z-50 border border-[#BF9347] rounded-md">
+                    %45 DISCOUNT
+                </div>
+                <div class="flex items-center justify-center py-2.5 px-7">
+                    <img src="../assets/images/img/Group 137.png" class="w-full" alt="">
+                </div>
+                <div class="bg-[#3071B9] text-white text-sm font-semibold p-2.5 group-hover:bg-[#BF9347]">
+                    <p>Don't miss the opportunity products, big discount has started! JOIN NOW</p>
+                </div>
+            </div>
+            <div class="relative border border-[#3071B9] rounded-md hover:border-[#BF9347] group">
+                <div
+                    class="absolute left-[-1px] top-[-1px] py-2 px-5 bg-[#BF9347]  text-sm font-bold text-white z-50 border border-[#BF9347] rounded-md">
+                    %30 DISCOUNT
+                </div>
+                <div class="flex items-center justify-center py-2.5 px-7">
+                    <img src="../assets/images/img/Group 137.png" class="w-full" alt="">
+                </div>
+                <div class="bg-[#3071B9] text-white text-sm font-semibold p-2.5 group-hover:bg-[#BF9347]">
+                    <p>Don't miss the opportunity products, big discount has started! JOIN NOW</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-[#3071B9] mt-[106px]">
+        <div class="max-w-[1154px] w-full mx-auto px-5 xl:px-0 py-5">
+            <div class="flex flex-col items-center justify-between gap-10 sm:flex-row">
+                <a class="block" href="#"><img src="..//assets/images/img/footer-logo.png" alt=""></a>
+                <div class="flex items-center gap-[51px] lg:mr-20">
+                    <a class="" href="">
+                        <img src="..//assets/images/img/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="..//assets/images/img/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="..//assets/images/img/twitter.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div
+                class="grid grid-cols-1 gap-6 mt-12 text-sm text-center sm:text-left sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class="flex flex-col mx-auto font-semibold text-white sm:m-0 max-w-max sm:max-w-none">
+                    <span class="mb-5">About Ofshoppy</span>
+                    <ul class="flex flex-col gap-2">
+                        <li class="">
+                            <a class="footer-link" href="#">About us</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Contact us</a>
+                        </li>
+                        <li><a class="footer-link" href="#">Order Creation</a></li>
+                        <li><a class="footer-link" href="#">Customer service</a></li>
+                        <li><a class="footer-link" href="#">Human Resources</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col mx-auto font-semibold text-white sm:m-0 max-w-max sm:max-w-none">
+                    <span class="mb-5">Help</span>
+                    <ul class="flex flex-col gap-2">
+                        <li>
+                            <a class="footer-link" href="#">Frequently Asked Questions</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Shipping Options</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Order cancellation</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Distance Sales Agreement</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Legal Rights Return Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col mx-auto font-semibold text-white sm:m-0 max-w-max sm:max-w-none">
+                    <span class="mb-5">Protection of Personal Data</span>
+                    <ul class="flex flex-col gap-2">
+                        <li class="">
+                            <a class="footer-link" href="#">Privacy and Security</a>
+
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Membership Agreement</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Illumination Text</a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="flex flex-col mx-auto font-semibold text-white sm:m-0 max-w-max sm:max-w-none">
+                    <span class="mb-5">Ofshoppy E-Info</span>
+                    <ul class="">
+                        <li class="flex flex-col gap-2">
+                            <p>Sign up for the ofshoppy e-bulletin, be the first to know about weekly and monthly
+                                campaigns!</p>
+                            <div class="relative mt-2 ">
+                                <input
+                                    class="outline-none p-4 pr-20 rounded-md text-black bg-[#bbd3f1] placeholder:text-white w-full"
+                                    type="email" placeholder="e-mail address">
+                                    <button class="absolute right-0 top-0 h-full px-3 bg-[#2CC5EC] text-white rounded-md">SUBMIT</button>
+                            </div>
+                            <label for="checkboxCheck" class="flex items-start gap-2 mb-6 text-left checkboxLabel">
+                                <input class="hidden" type="checkbox" name="#" id="checkboxCheck">
+                                <span
+                                    class="check min-w-[12px] min-h-[12px] w-3 h-3 rounded-[3px] border border-white mt-1.5 block overflow-hidden">
+                                    <span class="hidden w-full h-full bg-green-500 checked"></span>
+                                </span>
+                                <p>I have read and accept the Membership Agreement, Cookie Policy, Site Terms of Use,
+                                    Clarification Text.</p>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class=" max-w-[1154px] mx-auto flex items-center justify-center mt-12 border-t-2 border-white">
+            <p class="p-3 text-white">Ofshoppy Materials Trading Co. Inc. All rights reserved. © Copyright 2023</p>
+        </div>
+        </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".custom-select").select2();
+        });
+    </script>
+</body>
+
+</html>

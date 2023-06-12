@@ -1,0 +1,248 @@
+@import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
+html {
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body .checkboxLabel input:checked ~ span.check span.checked {
+  display: block;
+}
+body .select2-results__options li:first-child {
+  display: none;
+}
+body .select2-container--default.select2-container--disabled .select2-selection--single {
+  background-color: transparent;
+  opacity: 70%;
+}
+body .select2-selection.select2-selection--single {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+}
+body .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: white;
+}
+body .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border-color: #fff transparent transparent transparent;
+}
+body .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-width: 0 4px 5px 4px;
+  border-color: transparent transparent #fff transparent;
+}
+body .select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+}
+body .select2-container--default .select2-search--dropdown .select2-search__field {
+  outline: none;
+  border: 1px solid #2495CB;
+}
+body .select2-dropdown {
+  border: 0;
+}
+body .select2-results__options {
+  margin-bottom: 10px;
+}
+body .select2-results__options::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body .select2-results__options::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+  border: 1px solid #96B7DB;
+}
+body .select2-results__options::-webkit-scrollbar-thumb {
+  background-color: #96B7DB;
+}
+body .hero-carousel .owl-nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  body .hero-carousel .owl-nav {
+    display: block;
+  }
+}
+body .hero-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  border-radius: 9999px !important;
+  background-color: white !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
+}
+body .hero-carousel .owl-nav button.owl-prev {
+  left: 0;
+  transform: translate(-30px, -50%);
+}
+body .hero-carousel .owl-nav button.owl-next {
+  right: 0;
+  transform: translate(30px, -50%);
+}
+body .discover-category .discover-product {
+  border-radius: 50%;
+  transition: 500ms all ease-in-out;
+}
+body .discover-category:hover .discover-product {
+  border-radius: 15px !important;
+}
+body .bags-carousel .owl-nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  body .bags-carousel .owl-nav {
+    display: block;
+  }
+}
+body .bags-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  border-radius: 9999px !important;
+  background-color: white !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
+}
+body .bags-carousel .owl-nav button.owl-prev {
+  left: 0;
+  transform: translate(-30px, -50%);
+}
+body .bags-carousel .owl-nav button.owl-next {
+  right: 0;
+  transform: translate(30px, -50%);
+}
+body .ofix-carousel .owl-nav {
+  display: none;
+}
+@media (min-width: 1200px) {
+  body .ofix-carousel .owl-nav {
+    display: block;
+  }
+}
+body .ofix-carousel .owl-nav button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  border-radius: 9999px !important;
+  background-color: white !important;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09);
+}
+body .ofix-carousel .owl-nav button.owl-prev {
+  left: 0;
+  transform: translate(-30px, -50%);
+}
+body .ofix-carousel .owl-nav button.owl-next {
+  right: 0;
+  transform: translate(30px, -50%);
+}
+body .breadcrumb {
+  background-color: #EEEEEE;
+  padding: 12px 20px;
+  border-radius: 7px;
+}
+body .breadcrumb .back-url {
+  display: inline-block;
+}
+body .breadcrumb .bread-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+body .breadcrumb ul li:after {
+  content: url("svg/next.svg");
+  position: relative;
+  top: 2px;
+  margin-left: 6px;
+  left: 6px;
+}
+body .breadcrumb ul li:last-child:after {
+  content: none;
+}
+body .breadcrumb svg {
+  display: inline-block;
+}
+body .breadcrumb .listing-group span {
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 4px;
+}
+body .breadcrumb .listing-group span.list-table {
+  background: url("svg/table.svg") no-repeat center center;
+}
+body .breadcrumb .listing-group span.list-grid {
+  background: url("svg/grid.svg") no-repeat center center;
+}
+body .breadcrumb .listing-group span.list-list {
+  background: url("svg/list.svg") no-repeat center center;
+}
+body .breadcrumb .listing-group span.active {
+  background-color: #90e8ff;
+  border-radius: 3px;
+}
+body .filter-area {
+  border: 1px solid #3071B9;
+  border-radius: 5px;
+  padding: 30px 8px;
+}
+body .filter-area .filter-main-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #414141;
+  margin-bottom: 30px;
+}
+body .filter-area .filter-group .filter-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #414141;
+}
+body .filter-area .filter-group hr {
+  border: 1px solid #3071B9;
+  margin: 20px 0;
+}
+body .grid-list .item {
+  width: 100% !important;
+}
+body .grid-list .item .item-info .side-left {
+  display: flex;
+  flex-direction: column;
+}
+body .list-list {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+body .list-list .item {
+  padding: 10px;
+}
+body .list-list .item .item-image {
+  width: 152px;
+  height: 152px;
+  padding: 0 !important;
+  float: left;
+}
+body .list-list .item .item-image img {
+  position: initial !important;
+  object-fit: contain;
+}
+body .list-list .item .item-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+body .list-list .item .item-info .side-right {
+  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  max-width: 100px;
+}
+
+/*# sourceMappingURL=custom.css.map */
